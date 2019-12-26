@@ -1,4 +1,13 @@
+$blue: #D1E0FF;
 @mixin m400 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
+@mixin neo400 {
+  font-family: 'Neometric';
+  font-weight: 400;
+}
+@mixin neo500 {
+  font-family: 'Neometric';
+  font-weight: 500;
 }

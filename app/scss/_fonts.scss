@@ -1,1 +1,17 @@
 // font-family: 'Montserrat', sans-serif;
+@font-face {
+  font-family: 'Neometric';
+  src: url('../fonts/Neometric-Regular.woff2') format('woff2'),
+      url('../fonts/Neometric-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neometric';
+  src: url('../fonts/Neometric-Medium.woff2') format('woff2'),
+      url('../fonts/Neometric-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
