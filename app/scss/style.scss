@@ -2,6 +2,41 @@
 @import 'vars';
 @import 'global';
 
+// Banner start
+.banner {
+  img {
+    // max-height: 390px;
+    display: block;
+    width: 100%;
+  }
+}
+// Banner end
 
+// Menu start
+.menu__inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 35px 0;
+}
+.menu__list li {
+  & + li {
+    margin-left: 38px;
+  }
+}
+.menu__list a {
+  @include m400;
+  color: #000;
+  font-size: 21px;
+  line-height: 21px;
+}
+.menu__btn {
+  margin-left: 100px;
+  img {
+    max-width: 260px;
+  }
+}
+
+// Menu end
 
 @import 'media';
