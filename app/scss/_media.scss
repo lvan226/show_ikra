@@ -1,0 +1,45 @@
+@media (max-width: 1600px) {
+  .gallery .slick-arrow {
+    color: #fff;
+    &:hover {
+      color: #000;
+    }
+  }
+  .gallery .slick-prev {
+    top: 75%;
+    right: 50%;
+    left: auto;
+    margin-right: 15px;
+  }
+  .gallery .slick-next {
+    left: 50%;
+    top: 75%;
+    transform: translateX(0%);
+    margin-left: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .gallery__photo {
+    height: 400px;
+  }
+  .gallery .slick-arrow {
+    width: 40px;
+    height: 40px;
+    top: 78%;
+  }
+  .gallery .slick-arrow::before {
+    font-size: 25px;
+  } 
+}
+@media (max-width: 767px) {
+  .gallery__photo {
+    height: 280px;
+  }
+  .gallery .slick-arrow {
+    top: 70%;
+  }
+  .gallery::before {
+    width: 200px;
+    height: 22px;
+  }
+}

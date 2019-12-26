@@ -111,4 +111,91 @@
   }
 }
 // Header end
+
+// Gallery start
+.gallery {
+  @include sec-top;
+  background-color: $blue;
+}
+.gallery__inner {
+  padding: 140px 0px 90px;
+}
+.gallery__photo {
+  background-color: #C4C4C4;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gallery .slick-arrow {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border: 2px solid $yellow;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: .4s;
+  z-index: 10;
+  &:hover {
+    background-color: $yellow;
+  }
+}
+.gallery {
+  .slick-prev {
+    top: 50%;
+    left: -100px;
+    &::before {
+      font-family: 'icomoon' !important;
+      content: "\f104";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+  .slick-next {
+    top: 50%;
+    right: -100px;
+    &::before {
+      font-family: 'icomoon' !important;
+      content: "\f105";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+}
+.gallery .slick-dots {
+  font-size: 0;
+  text-align: center;
+  margin-top: 15px;
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  li {
+    border-radius: 50%;
+    background-color: #C8C8C8;
+    cursor: pointer;
+    transition: .5s;
+    width: 20px;
+    height: 20px;
+    &.slick-active {
+      background-color: $yellow;
+    }
+    & + li {
+      margin-left: 10px;
+    }
+  }
+}
+// Gallery end
 @import 'media';
