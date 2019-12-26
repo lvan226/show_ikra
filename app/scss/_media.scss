@@ -124,8 +124,8 @@
       width: 100%;
       right: 0;
       a {
-        font-size: 21px;
-        line-height: 21px;
+        font-size: 26px;
+        line-height: 26px;
       }
     }
   }
@@ -225,4 +225,10 @@
     line-height: 14px;
     bottom: -18px;
   }
+}
+
+@media (min-width: 768px) {
+   #menuToggle {
+     display: none;
+   }
 }
