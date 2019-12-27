@@ -381,5 +381,21 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.works__title {
+  @include m400;
+  font-size: 64px;
+  line-height: 78px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.works__content {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  margin-bottom: 30px;
+}
+.works__text {
+  margin-bottom: auto;
+}
 // Footer end
 @import 'media';
