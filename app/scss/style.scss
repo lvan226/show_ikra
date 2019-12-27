@@ -187,8 +187,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
-.gallery .slick-arrow {
+.gallery .slick-arrow,
+.poster .slick-arrow {
   position: absolute;
   border: none;
   background-color: transparent;
@@ -204,7 +206,8 @@
     background-color: $yellow;
   }
 }
-.gallery {
+.gallery,
+.poster {
   .slick-prev {
     top: 50%;
     left: -100px;
@@ -234,7 +237,8 @@
     }
   }
 }
-.gallery .slick-dots {
+.gallery .slick-dots,
+.poster .slick-dots {
   font-size: 0;
   text-align: center;
   margin-top: 15px;
@@ -298,4 +302,43 @@
   line-height: 25px;
 }
 // About end
+
+// Poster start
+.poster {
+  @include sec-top;
+  background-color: $blue;
+}
+.poster__inner {
+  padding: 100px 0;
+}
+.poster__slider-item {
+  height: 540px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.poster .slick-slide {
+  width: 380px;
+  margin-right: 60px;
+}
+.icon-search-plus {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid $yellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 400;
+  transition: .3s;
+  &:hover {
+    background-color: $yellow;
+    color: #000;
+    transform: scale(1.25);
+  }
+}
+// Poster end
 @import 'media';
