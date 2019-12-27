@@ -341,4 +341,45 @@
   }
 }
 // Poster end
+
+// Footer start
+.footer__inner {
+  padding: 120px 0;
+}
+.footer__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 110px;
+}
+.footer__info-image {
+  max-width: 380px;
+  width: 100%;
+  margin-right: 150px;
+  img {
+    width: 380px;
+    height: 380px;
+  }
+}
+.footer__info-text {
+  font-size: 21px;
+  line-height: 25px;
+}
+.footer__info-social {
+  display: flex;
+  margin-top: 60px;
+  a + a {
+    margin-left: 40px;
+  }
+}
+.footer__info-content {
+  max-width: 540px;
+  width: 100%;
+}
+.footer__img {
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// Footer end
 @import 'media';
