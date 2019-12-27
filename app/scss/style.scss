@@ -32,10 +32,11 @@
   line-height: 21px;
 }
 .menu__btn {
-  margin-left: 100px;
-  img {
-    max-width: 260px;
-  }
+  width: 250px;
+  min-height: 60px;
+  margin-left: 110px;
+  font-size: 24px;
+  line-height: 29px;
 }
 .menu__logo {
   display: none;
@@ -175,7 +176,7 @@
 
 // Gallery start
 .gallery {
-  @include sec-top;
+  // @include sec-top;
   background-color: $blue;
 }
 .gallery__inner {
@@ -266,7 +267,7 @@
 
 // About start
 .about {
-  @include sec-top;
+  // @include sec-top;
   padding: 120px 0;
 }
 .about-row {
@@ -305,7 +306,7 @@
 
 // Poster start
 .poster {
-  @include sec-top;
+  // @include sec-top;
   background-color: $blue;
 }
 .poster__inner {
@@ -334,6 +335,8 @@
   border-radius: 50%;
   font-weight: 400;
   transition: .3s;
+  background-color: transparent;
+  cursor: pointer;
   &:hover {
     background-color: $yellow;
     color: #000;
@@ -398,4 +401,98 @@
   margin-bottom: auto;
 }
 // Footer end
+
+// Modal start
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 200px;
+  padding: 35px 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  @include m400;
+  max-width: 600px;
+  z-index: 12;
+}
+.modal__heading {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.modal__line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.modal__line input {
+  border: 1px solid #C1C1C1;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 12px 15px;
+  @include m400;
+  margin-right: 20px;
+  color: #000;
+  &::placeholder {
+    color: #000;
+  }
+}
+.modal__line button {
+  min-height: 40px;
+  width: 160px;
+}
+.modal__caption {
+  @include m400;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  span {
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+  }
+}
+// Modal end
+
+// Protect start
+.protect {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  padding: 30px 50px;
+  max-height: 590px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  @include m400;
+  max-width: 660px;
+  overflow-y: scroll;
+}
+.protect__heading {
+  font-weight: 600;
+}
+.protect__list li {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.overlay {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(#000, .5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+// Protect end
 @import 'media';

@@ -7,13 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="css/libs.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 
   <title>ShowIKRA</title>
 </head>
 
 <body>
+  <div class="overlay"></div>
 
   <div class="banner">
     <img src="images/banner.jpg" alt="">
@@ -29,7 +30,7 @@
         </div>
         <ul class="menu__list">
           <li><a href="#">Галерея</a></li>
-          <li><a href="#">Вакансии</a></li>
+          <li><a href="work.html">Вакансии</a></li>
           <li><a href="#">О нас</a></li>
         </ul>
         <div id="menuToggle">
@@ -39,7 +40,7 @@
           <span id="span3"></span>
         </div>
         <button class="menu__btn btn">
-          <img src="images/button.png" alt="">
+          Buy Tickets
         </button>
       </div>
       <!-- /.menu__inner -->
@@ -115,19 +116,19 @@
       <div class="gallery__inner">
         <div class="gallery__slider">
           <div class="gallery__photo" style="background-image: url(images/gallery/1.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="gallery__photo" style="background-image: url(images/gallery/2.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="gallery__photo" style="background-image: url(images/gallery/3.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="gallery__photo" style="background-image: url(images/gallery/4.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="gallery__photo" style="background-image: url(images/gallery/5.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
         </div>
         <!-- /.gallery__slider -->
@@ -204,19 +205,19 @@
       <div class="poster__inner">
         <div class="poster__slider">
           <div class="poster__slider-item" style="background-image: url(images/gallery/1.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="poster__slider-item" style="background-image: url(images/gallery/2.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="poster__slider-item" style="background-image: url(images/gallery/3.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="poster__slider-item" style="background-image: url(images/gallery/4.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
           <div class="poster__slider-item" style="background-image: url(images/gallery/5.jpg);">
-            <button class="btn icon-search-plus"></button>
+            <button class="icon-search-plus"></button>
           </div>
         </div>
         <!-- /.poster__slider -->
@@ -254,6 +255,45 @@
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+
+  <div id="modal" class="modal">
+    <div class="modal__heading">
+      Оповестить о старте продаж
+    </div>
+    <form action="">
+      <div class="modal__line">
+        <input type="email" placeholder="E-mail">
+        <button class="btn">Оповестить</button>
+      </div>
+      <div class="modal__caption">
+        Нажимая на кнопку, вы даете <span>согласие</span> на обработку персональных данных 
+        и соглашаетесь с политикой конфиденциальности.
+      </div>
+    </form>
+  </div>
+  <!-- /#modal -->
+
+  <div id="protect" class="protect">
+    <div class="protect__heading">
+      Конфиденциальность и защита
+    </div>
+    <ul class="protect__list">
+      <li>1.	   Персональные данные Посетителя обрабатываются в соответствии 
+        с ФЗ «О персональных данных» № 152-ФЗ.</li>
+      <li>2.	   При отправке формы обратной связи Посетитель предоставляет следующую информацию: имя, контактный номер телефона, адрес электронной почты.</li>
+      <li> 3.	   Предоставляя свои персональные данные Владельцу сайта, Посетитель соглашается на их обработку Владельцем сайта, в том числе 
+        в целях выполнения Владельцем сайта обязательств перед Посетителем.</li>
+      <li>4.	   Под обработкой персональных данных понимается любое действие (операция) или совокупность действий (операций), совершаемых 
+        с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение) извлечение, использование, передачу (в том числе передачу третьим лицам, не исключая трансграничную передачу, если необходимость в ней возникла в ходе исполнения обязательств), обезличивание, блокирование, удаление, уничтожение персональных данных.</li>
+      <li>5.	   Владелец сайта вправе использовать технологию «cookies». «Cookies» 
+        не содержат конфиденциальную информацию. Посетитель настоящим дает согласие на сбор, анализ и использование cookies, в том числе третьими лицами для целей формирования статистики и оптимизации рекламных сообщений.</li>
+      <li>6.	   Владелец сайта получает информацию об ip-адресе Посетителя. Данная информация не используется для установления личности посетителя.</li>
+      <li>7.	   Владелец сайта вправе осуществлять записи телефонных разговоров 
+        с Покупателем. При этом Владелец сайта обязуется: предотвращать попытки несанкционированного доступа к информации, полученной 
+        в ходе телефонных переговоров, и/или передачу ее третьим лицам, 
+        не имеющим непосредственного отношения к взаимодействию между Владельцем сайта и Посетителем, в соответствии с п. 4 ст. 16 Федерального закона «Об информации, информационных технологиях и о защите информации».</li>
+    </ul>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
