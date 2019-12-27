@@ -12,6 +12,10 @@ $yellow: #FFF159;
   font-family: 'Neometric';
   font-weight: 500;
 }
+@mixin neo700 {
+  font-family: 'Neometric';
+  font-weight: 700;
+}
 @mixin sec-top {
   position: relative;
   &::before {
