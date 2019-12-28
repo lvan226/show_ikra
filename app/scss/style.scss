@@ -502,6 +502,11 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  transform: scale(0);
+  transition: .2s;
+  &.active {
+    transform: scale(1);
+  }
 }
 // Protect end
 @import 'media';

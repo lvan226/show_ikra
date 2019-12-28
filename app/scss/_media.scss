@@ -1,7 +1,6 @@
 .header__counter {
   display: none;
 }
-.overlay,
 .protect{
   display: none;
 }
@@ -337,13 +336,13 @@
     }
   }
   .modal__heading {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 26px;
+    line-height: 30px;
     margin-bottom: 20px;
   }
   .modal__caption {
-    font-size: 9px;
-    line-height: 10px;
+    font-size: 8px;
+    line-height: 9px;
   }
 }
 @media (max-width: 500px) {
