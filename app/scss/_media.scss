@@ -2,8 +2,7 @@
   display: none;
 }
 .overlay,
-.protect,
-.modal {
+.protect{
   display: none;
 }
 @media (max-width: 1600px) {
@@ -92,7 +91,7 @@
     margin-bottom: 15px;
   }
   .header__logo {
-    display: none;
+    margin-bottom: 15px;
   }
   .header__info {
     max-width: 100%;
@@ -137,7 +136,7 @@
   .footer__info {
     margin-bottom: 70px;
   }
-  .footer__img {
+  .footer__map {
     height: 420px;
   }
   .footer__info-image img {
@@ -156,14 +155,11 @@
   }
 }
 @media (max-width: 767px) {
-  #menuToggle {
-    display: flex;
-    position: fixed;
-    top: 0;
-    justify-content: flex-start;
-    margin-top: 25px;
-    padding-right: 15px;
-    z-index: 16;
+  .header__logo {
+    height: 60px;
+  }
+  .close {
+    display: block;
   }
   .menu__inner {
     flex-wrap: wrap;
@@ -210,13 +206,16 @@
         line-height: 26px;
       }
     }
-  }
+  }    
+
   .menu__btn  {
+    font-size: 20px;
+    line-height: 22px;
     margin-top: 0px;
     margin-bottom: 15px;
     margin-left: 0;
     order: 1;
-    max-width: 120px;
+    max-width: 240px;
     height: 25px;
     img {
       width: 100%;
@@ -226,10 +225,8 @@
     display: block;
     width: 98px;
     order: 1;
-    margin-left: 60px;
-  }
-  .banner {
-    display: none;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header__counter-title {
     font-size: 38px;
@@ -275,6 +272,7 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    padding-top: 76px;
   }
   .header__text {
     font-size: 26px;
@@ -306,27 +304,39 @@
   .footer__info-content {
     max-width: 100%;
   }
-  .footer__img {
+  .footer__map {
     height: 320px;
   }
   .footer__inner {
     padding: 70px 0;
   }
+  .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #000;
+    font-size: 24px;
+  }
 }
 @media (max-width: 500px) {
+
   .header__counter-title {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 9px;
-}
+  }
   .counter-item span {
     padding: 4px 6px;
     font-size: 26px;
     line-height: 36px;
   }
   .header__text {
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 18px;
   }
   .header__btn img {
     max-width: 220px;
@@ -368,7 +378,7 @@
   .poster__slider-item {
     height: 300px;
   }
-  .footer__img {
+  .footer__map {
     height: 220px;
   }
   .works__title {
@@ -376,10 +386,27 @@
     font-size: 52px;
     line-height: 60px;
   }
+  .menu__btn {
+    max-width: 125px;
+    font-size: 12px;
+    line-height: 15px;
+    min-height: 36px;
+  }
+  .menu__inner {
+    padding-bottom: 0px;
+  }
+  .menu__logo {
+    width: 70px;
+  }
 }
+@media (max-width: 400px) {
 
+}
 @media (min-width: 768px) {
-   #menuToggle {
+   .menu-burger {
+     display: none;
+   }
+   .close {
      display: none;
    }
 }
