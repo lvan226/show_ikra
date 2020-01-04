@@ -35,10 +35,10 @@
         <div class="menu__logo">
           <img src="images/menu-logo.png" alt="">
         </div>
-        <ul class="menu__list">
-          <li class="header__link"><a href="#" class="link__text">Галерея</a></li>
+        <ul class="menu__list" id="menu">
+          <li class="header__link"><a href="#gallery" class="link__text link-helper">Галерея</a></li>
           <li class="header__link"><a href="work.html" class="link__text">Вакансии</a></li>
-          <li class="header__link"><a href="#" class="link__text">О нас</a></li>
+          <li class="header__link"><a href="#about" class="link__text link-helper">О нас</a></li>
           <div class="close icon-close"></div>
         </ul>
         <button class="menu__btn btn btn-modal">
@@ -71,41 +71,6 @@
         <!-- /.header__img -->
       </div>
       <!-- /.header__inner -->
-      <div class="header__counter">
-        <div class="header__counter-title">
-          До старта продаж:
-        </div>
-        <div class="counter">
-          <div class="counter-day counter-item">
-            <span></span>
-            <div>дней</div>
-            <span></span>
-          </div>
-          <!-- /.counter-day -->
-          <div class="counter-hour counter-item">
-            <span></span>
-            <div>часов</div>
-            <span></span>
-          </div>
-          <!-- /.counter-hour -->
-          <div class="counter-min counter-item">
-            <span></span>
-            <div>минут</div>
-            <span></span>
-          </div>
-          <!-- /.counter-min -->
-          <div class="counter-sec counter-item">
-            <span></span>
-            <div>секунд</div>
-            <span></span>
-          </div>
-          <!-- /.counter-sec -->
-        </div>
-        <button class="header__btn btn">
-          <img src="images/header-btn.png" alt="">
-        </button>
-      </div>
-      <!-- /.header__counter -->
     </div>
     <!-- /.container -->
   </header>
@@ -113,7 +78,7 @@
   <!-- Шапка конец -->
 
   <!-- Галлерея начало -->
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <div class="container">
       <div class="gallery__inner">
         <div class="gallery__slider wow fadeInUp">
@@ -143,7 +108,7 @@
   <!-- Галлерея конец -->
 
   <!-- Секция о нас начало -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about-row">
         <div class="about__img wow fadeInLeft" data-wow-duration="1.3s" style="background-image: url(images/about/1.jpg)">
@@ -274,7 +239,7 @@
         <button class="btn">Оповестить</button>
       </div>
       <div class="modal__caption">
-        Нажимая на кнопку, вы даете <span>согласие</span> на обработку персональных данных
+        Нажимая на кнопку, вы даете <span id="protect-open">согласие</span i> на обработку персональных данных
         и соглашаетесь с политикой конфиденциальности.
       </div>
     </form>
@@ -282,6 +247,10 @@
   <!-- /#modal -->
 
   <div id="protect" class="protect">
+    <div class="protect-close">
+      <span></span>
+      <span></span>
+    </div>
     <div class="protect__heading">
       Конфиденциальность и защита
     </div>

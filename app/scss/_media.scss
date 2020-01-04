@@ -1,9 +1,4 @@
-.header__counter {
-  display: none;
-}
-.protect{
-  display: none;
-}
+
 @media (max-width: 1600px) {
   .gallery .slick-arrow,
   .poster .slick-arrow {
@@ -151,6 +146,20 @@
   }
   .footer__info-social {
     margin-top: 20px;
+  }
+  .protect {
+    max-width: 580px;
+    width: 100%;
+    &.active {
+      max-height: 560px;
+      padding: 15px 25px;
+    }
+  }
+  .protect__list li {
+    margin-bottom: 10px;
+  }
+  .protect__heading {
+    font-size: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -343,6 +352,26 @@
   .modal__caption {
     font-size: 8px;
     line-height: 9px;
+  }
+  .protect {
+    max-width: 300px;
+    &.active {
+      max-height: 350px;
+      padding: 10px 8px;
+    }
+  }
+  .protect__heading {
+    font-size: 21px;
+    line-height: 25px;
+    padding-right: 20px;
+  }
+  .protect__list li {
+    margin-bottom: 7px;
+    line-height: 18px;
+  }
+  .protect-close {
+    width: 20px;
+    height: 20px;
   }
 }
 @media (max-width: 500px) {

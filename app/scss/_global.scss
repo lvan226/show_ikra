@@ -13,6 +13,7 @@ body {
   line-height: 24px;
   color: #000;
   @include neo400;
+  transition: overflow-y 3s;
 }
 img {
   max-width: 100%;
@@ -86,6 +87,6 @@ span {
   }
 }
 .hidden-y {
-  overflow: hidden;
+  overflow-y: hidden;
 }
  
