@@ -535,6 +535,25 @@
     cursor: pointer;
   }
 }
+.modal-close {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  span {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    transform: rotate(45deg);
+    & + span {
+      transform: rotate(-45deg);
+    }
+  }
+}
 // Modal end
 
 // Protect start
@@ -626,7 +645,7 @@
   transition: .5s;
   &.active {
     height: 100%;
-    overflow-y: auto;
+    overflow-y: visible;
   }
 }
 .works__close {
