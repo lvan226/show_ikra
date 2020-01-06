@@ -430,6 +430,48 @@
 }
 // Footer end
 
+// Bottom start
+.bottom {
+  background-color: #3E3E3E;
+  color: #fff;
+  @include neo400;
+  padding: 100px 0;
+}
+.bottom__inner {
+  display: flex;
+}
+.bottom__list + .bottom__list {
+  margin-left: 15%;
+}
+.bottom__list {
+  &-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    @include neo500
+  }
+  &-email {
+    color: #46D3FF;
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #46D3FF;
+    margin-bottom: 12px;
+  }
+  &-phone {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    line-height: 14px;
+  }
+}
+.bottom__copy {
+  margin-top: 60px;
+  font-size: 14px;
+  line-height: 14px;
+}
+// Bottom end
+
 // Modal start
 .modal {
   position: fixed;
