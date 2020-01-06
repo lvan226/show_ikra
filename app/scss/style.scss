@@ -350,6 +350,29 @@
 }
 // Poster end
 
+// Partners start
+.partners {
+  background-color: #E3E3E3;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.partners__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #000;
+  text-align: center;
+}
+.partners__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img + img {
+    margin-left: 80px;
+  }
+}
+// Partners end
+
 // Footer start
 .footer__inner {
   padding: 120px 0 70px;
