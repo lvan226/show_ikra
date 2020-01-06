@@ -167,6 +167,9 @@
   .bottom__list + .bottom__list {
     margin-left: 60px;
   }
+  .menu__list li+li {
+    margin-left: 15px;
+  }
 }
 @media (max-width: 767px) {
   .header__logo {
