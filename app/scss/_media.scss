@@ -69,6 +69,11 @@
     margin-right: 120px;
   }
 }
+@media (max-width: 1023px) {
+  a.fancybox {
+    transform: scale(1);
+  }
+}
 @media (max-width: 992px) {
   .gallery__photo {
     height: 400px;
@@ -402,15 +407,19 @@
   }
   .partners__list {
     display: block;
-    img {
+    a {
       display: block;
       margin-left: auto;
       margin-right: auto;
       max-height: 50px;
     }
-    img + img {
+    a + a {
       margin-left: auto;
       margin-top: 35px;
+    }
+    img {
+      display: block;
+      max-height: 50px;
     }
   }
 }

@@ -368,7 +368,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  img + img {
+  a {
+    display: block;
+  }
+  a + a {
     margin-left: 80px;
   }
 }
@@ -668,4 +671,12 @@
   }
 }
 // Works
+
+// Releases
+a.fancybox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Releases
 @import 'media';
